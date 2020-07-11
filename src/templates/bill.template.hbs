@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>No. Factura: {{bill_number}}</p>
+    <h1>VENTA ONLINE</h1>
+    <h2>DATOS DE LA FACTURA</p>
+    <h4>Nombre De La Empresa: {{enterprise}}</h3>
+    <p class="info">Direccion de la empresa: {{enterprise_address}}</p>
+    <p class="info">Empresa NIT: {{enterprise_NIT}}</p>
+    <p class="info">Fecha de Emision: {{date_of_issue}}</p>
+    <p class="info">Cliente: {{client_name}}</p>
+    <table>
+        <tr>
+            <th>
+                Producto
+            </th>
+            <th>
+                Cantidad
+            </th>
+            <th>
+                Precio
+            </th>
+        <tr>
+            {{#each products}}
+        <tr>
+            <td>{{this.product_name}}</td>
+            <td>{{this.bill_cuantity}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+            {{/each}}
+        <tr class="total">
+            <td colspan="2">Total</td>
+            <td>{{total}}</td>
+        </tr>
+    </table>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th {
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .data {
+            text-align: center;
+        }   
+        table {
+            margin: auto;
+        }
+        h4 {
+            margin-left: 20px;
+        }
+        .info {
+            margin-left: 60px;
+        }
+        th {
+        width: 150px;
+        background-color: #347aeb;
+        color: black;
+        }
+        tr {
+            background-color: #34cdeb;
+            color: black;
+        }
+    </style>
+  </body>
+</html>
