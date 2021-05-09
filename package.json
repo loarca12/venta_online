@@ -14,7 +14,7 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "fs-extra": "^8.1.0",
-    "handlebars": "^4.7.3",
+    "handlebars": "^4.7.7",
     "jwt-simple": "^0.5.6",
     "moment": "^2.24.0",
     "mongoose": "^5.9.3",
